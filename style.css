@@ -101,16 +101,16 @@ main .services {
   width: 100%;
   display: block;
   place-items: center;
-  margin: 5vh 0;
+  margin: 10vh 0;
 }
 
 main .services .cont {
-    width: 80vw;
-    margin: 10vh 0;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4,1fr);
-    row-gap: 5vh;
+  width: 80vw;
+  margin: 10vh 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5vh;
 }
 
 main .services .cont .items {
@@ -125,56 +125,56 @@ main .services .cont .items {
 }
 
 main .services .cont .items img {
-    width: 10vw;
-    height: 10vw;
+  width: 10vw;
+  height: 10vw;
 }
 
 main .services .cont .items h3,
 main .services .cont .items p {
-    font-family: var(--font-1);
+  font-family: var(--font-1);
 }
 
 /* Services Styling End  */
 
 /* Pricing Styling Start  */
 
-#pricing{
-    width: 100%;
-    display: block;
-    place-items: center;
-    margin: 5vh 0;
+#pricing {
+  width: 100%;
+  display: block;
+  place-items: center;
+  margin: 10vh 0;
 }
 
-#pricing .articles{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
+#pricing .articles {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
 }
 
-#pricing .articles h1{
-    font-family: var(--font-1);
-    font-size: 3vw;
+#pricing .articles h1 {
+  font-family: var(--font-1);
+  font-size: 3vw;
 }
 
-#pricing .articles p{
-    font-family: var(--font-2);
-    font-size: 1.2vw;
+#pricing .articles p {
+  font-family: var(--font-2);
+  font-size: 1.2vw;
 }
 
-#pricing .cont{
-    width: 80vw;
-    margin: 5vh 0;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4,1fr);
-    row-gap: 5vh;
+#pricing .cont {
+  width: 80vw;
+  margin: 10vh 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5vh;
 }
 
-#pricing .cont .items{
-    width: 15vw;
+#pricing .cont .items {
+  width: 15vw;
   height: 35dvh;
   display: flex;
   flex-direction: column;
@@ -184,18 +184,79 @@ main .services .cont .items p {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-#pricing .cont .items img{
-    width: 13vw;
-    height: 10vw;
-    object-fit: cover;
-    border-radius: 0.2vw;
+#pricing .cont .items img {
+  width: 13vw;
+  height: 10vw;
+  object-fit: cover;
+  border-radius: 0.2vw;
 }
 
-#pricing .cont .items h3{
-    font-family: var(--font-1);
-    color: var(--col-1);
+#pricing .cont .items h3 {
+  font-family: var(--font-1);
+  color: var(--col-1);
 }
 
-#pricing .cont .items p{
-    font-family: var(--font-2);
+#pricing .cont .items p {
+  font-family: var(--font-2);
+}
+
+/* Testimonials Styling Start  */
+
+#testimony {
+  width: 100%;
+  display: block;
+  place-items: center;
+  margin: 10vh 0;
+}
+
+#testimony .articles {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2vh;
+}
+
+#testimony .articles h1 {
+  font-family: var(--font-1);
+  font-size: 3vw;
+}
+
+#testimony .articles h2 {
+  font-family: var(--font-2);
+  font-size: 2vw;
+}
+
+#testimony .articles p {
+  font-family: var(--font-2);
+  font-size: 1.2vw;
+}
+
+#testimony .customerReviews {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5vh 0;
+}
+
+#testimony .customerReviews .items {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  text-align: center;
+}
+
+#testimony .customerReviews .items p {
+  font-size: 1.2vw;
+  font-family: var(--font-2);
+}
+
+#testimony .customerReviews .items .userDetails h2 {
+  font-family: var(--font-1);
 }
