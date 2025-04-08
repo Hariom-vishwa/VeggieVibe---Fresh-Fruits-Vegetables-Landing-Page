@@ -32,26 +32,30 @@ nav {
   color: var(--col-2);
 }
 
-.logo {
+nav .logo {
   height: 10dvh;
+  font-size: 2.5vw;
   display: block;
   align-content: center;
   font-family: var(--font-1);
   color: var(--col-1);
   font-weight: 800;
-  font-size: 2.5vw;
 }
 
-.sideNav ul {
+nav .sideNav ul {
   display: flex;
   gap: 3vw;
   list-style: none;
 }
 
-.sideNav ul li a {
+nav .sideNav ul li a {
   text-decoration: none;
   font-family: var(--font-2);
   color: var(--col-2);
+}
+
+nav #hamburger {
+  display: none;
 }
 
 /* Nav Styling End  */
@@ -244,12 +248,16 @@ main .services .cont .items p {
 
 #testimony .customerReviews .items {
   width: 20vw;
+  padding: 2vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3vh;
   text-align: center;
+  border-bottom: 2px solid var(--col-1);
+  border-top: 2px solid var(--col-1);
+  border-radius: 10px;
 }
 
 #testimony .customerReviews .items p {
@@ -259,4 +267,44 @@ main .services .cont .items p {
 
 #testimony .customerReviews .items .userDetails h2 {
   font-family: var(--font-1);
+}
+
+/* Testimonials Style End  */
+
+/* Newsletter Style Start  */
+
+#newsletter {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #00000019;
+}
+
+#newsletter .articles h1 {
+  font-family: var(--font-1);
+  font-size: 2.5vw;
+}
+
+#newsletter .articles p {
+  font-family: var(--font-2);
+  font-size: 1.2vw;
+}
+
+#newsletter .form input {
+  width: 25vw;
+  height: 7vh;
+  padding: 0 1vw;
+  font-family: var(--font-2);
+}
+
+#newsletter .form button {
+  font-family: var(--font-2);
+  width: 7vw;
+  height: 7vh;
+  background: var(--col-1);
+  color: var(--col-3);
+  border: none;
+  outline: none;
 }
