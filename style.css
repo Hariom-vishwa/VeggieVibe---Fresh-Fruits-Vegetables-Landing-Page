@@ -308,3 +308,39 @@ main .services .cont .items p {
   border: none;
   outline: none;
 }
+
+/* Newsletter Style End  */
+
+footer{
+  width: 100%;
+  padding: 5vh 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10vw;
+}
+
+footer .cont{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  justify-content: start;
+  gap: 2vh;
+}
+
+footer .cont h1{
+  font-family: var(--font-1);
+  font-size: 1.5vw;
+}
+
+footer .cont p, footer .cont a{
+  text-decoration: none;
+  color: var(--col-2);
+  font-family: var(--font-2);
+}
+
+footer .cont span{
+  display: flex;
+  gap: 1vw;
+}
