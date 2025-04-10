@@ -1,7 +1,8 @@
 @media (max-width: 500px) {
+  /* Header Styling Start  */
 
-    /* Nav Styling  */
-    
+  /* Nav Styling  */
+
   nav {
     padding: 0 5vw;
     justify-content: space-between;
@@ -19,17 +20,27 @@
     justify-content: start;
     align-items: center;
   }
-  
+
   nav #hamburger .btnMenu {
     position: relative;
   }
-  
+
   nav #hamburger .btnMenu:hover .menu {
     transform: skew(0deg);
     opacity: 1;
     pointer-events: auto;
   }
-  
+
+  nav #hamburger .btnMenu button {
+    padding: 1vw 3vw;
+    outline: none;
+    border: none;
+    background: var(--col-1);
+    color: var(--col-3);
+    font-size: 5vw;
+    border-radius: 2vw;
+  }
+
   nav #hamburger .menu {
     width: 50vw;
     background: var(--col-3);
@@ -40,22 +51,426 @@
     align-items: start;
     gap: 3vw;
     position: absolute;
-    top: 4vw;
-    right: -7vw;
-    transform: skew(30deg);
+    top: 8vw;
+    right: -6vw;
+    transform: skewY(10deg);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
     z-index: 99;
   }
-  
 
   nav #hamburger .menu a {
     text-decoration: none;
     color: var(--col-2);
     font-family: var(--font-2);
   }
+
+  /* Nav Styling End  */
+
+  /* Hero Section Styling Start  */
+
+  header .heroSection {
+    height: 60dvh;
+    gap: 2vh;
+    text-align: center;
+  }
+
+  header .heroSection h1 {
+    font-size: 3vh;
+  }
+
+  header .heroSection p {
+    font-size: 2vh;
+  }
+
+  header .heroSection a {
+    font-size: 2vh;
+    border: 1px solid var(--col-3);
+    padding: 0.5vh 3vh;
+    border-radius: 1vw;
+  }
+
+  /* Hero Section Styling End  */
+
+  /* Header Styling End  */
+
+  /* Main Styling Start  */
+
+  /* Services Styling Start  */
+
+  main .services .cont {
+    width: 90vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .services .cont .items {
+    width: 80vw;
+    height: auto;
+    padding: 0 0 3vw 0;
+    gap: 2vw;
+  }
+
+  main .services .cont .items img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  main .services .cont .items h3 {
+    font-size: 5vw;
+  }
+  main .services .cont .items p {
+    font-size: 4vw;
+  }
+
+  /* Services Styling End  */
+
+  /* Pricing Styling Start  */
+
+  #pricing .articles {
+    width: 100%;
+    padding: 5vw;
+  }
+
+  #pricing .articles h1 {
+    font-size: 5vw;
+  }
+
+  #pricing .articles p {
+    font-size: 3vw;
+  }
+
+  #pricing .cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #pricing .cont .items {
+    width: 80vw;
+    height: auto;
+    padding: 2vw;
+    gap: 2vw;
+  }
+
+  #pricing .cont .items img {
+    width: 75vw;
+    height: 70%;
+  }
+
+  #pricing .cont .items p,
+  #pricing .cont .items h3 {
+    font-size: 4vw;
+  }
+
+  /* Pricing Styling End  */
+
+  /* Testimonials Style Start  */
+
+  #testimony .articles {
+    padding: 5vw;
+  }
+
+  #testimony .articles h1 {
+    font-size: 5vw;
+  }
+
+  #testimony .articles h2 {
+    font-size: 4vw;
+  }
+
+  #testimony .articles p {
+    font-size: 3vw;
+  }
+
+  #testimony .customerReviews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    row-gap: 5vh;
+  }
+
+  #testimony .customerReviews .items {
+    width: 80vw;
+    padding: 5vw;
+  }
+
+  #testimony .customerReviews .items h2 {
+    font-size: 5vw;
+  }
+
+  #testimony .customerReviews .items p {
+    font-size: 4vw;
+  }
+
+  /* Testimonials Style End  */
+
+  /* Newsletter Style Start  */
+
+  #newsletter {
+    flex-direction: column;
+  }
+
+  #newsletter .articles h1 {
+    font-size: 6vw;
+  }
+
+  #newsletter .articles p {
+    font-size: 3vw;
+  }
+
+  #newsletter .form input {
+    width: 50vw;
+    height: 5vh;
+    font-size: 3vw;
+    border-radius: 1vw;
+    border: none;
+    outline: none;
+  }
+
+  #newsletter .form button {
+    width: 20vw;
+    height: 5vh;
+    font-size: 3vw;
+    border-radius: 1vw;
+  }
+
+  /* Newsletter Style End  */
+
+  /* Main Styling End  */
+
+  /* Footer Styling Start  */
+
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    align-items: start;
+  }
+
+  footer .cont {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  footer .cont h1 {
+    font-size: 4vw;
+  }
+
+  footer .cont p,
+  footer .cont a {
+    font-size: 3vw;
+  }
+
+  /* Footer Styling End  */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 1024px) {
+  /* Nav Styling  */
+
+  nav {
+    padding: 0 5vw;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    font-size: 4vw;
+  }
+
+  nav #hamburger {
+    display: none;
+  }
+
+  /* Nav Styling End  */
+
+  /* Header Styling Start  */
+
+  header .heroSection {
+    height: 70dvh;
+    gap: 2vh;
+    text-align: center;
+  }
+
+  header .heroSection h1 {
+    font-size: 5vw;
+  }
+
+  header .heroSection p {
+    font-size: 3vw;
+  }
+
+  header .heroSection a {
+    font-size: 2vw;
+    border: 2px solid var(--col-3);
+    padding: 1vh 5vh;
+    border-radius: 1vw;
+  }
+
+  /* header Styling End  */
+
+  /* Main Styling Start  */
+
+  /* Services Styling Start  */
+
+  main .services .cont {
+    width: 90vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .services .cont .items {
+    width: 40vw;
+    height: auto;
+    padding: 0 0 5vw 0;
+  }
+
+  main .services .cont .items img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  main .services .cont .items h3 {
+    font-size: 3vw;
+  }
+  main .services .cont .items p {
+    font-size: 2vw;
+  }
+
+  /* Services Styling End  */
+
+  /* Pricing Styling Start  */
+
+  #pricing .articles {
+    width: 100%;
+    padding: 5vw;
+  }
+
+  #pricing .articles h1 {
+    font-size: 5vw;
+  }
+
+  #pricing .articles p {
+    font-size: 3vw;
+  }
+
+  #pricing .cont {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+  }
+
+  #pricing .cont .items {
+    width: 40vw;
+    height: auto;
+    padding: 3vw 1vw;
+    gap: 1vw;
+  }
+
+  #pricing .cont .items img {
+    width: 90%;
+    height: 20vw;
+  }
+
+  #pricing .cont .items p,
+  #pricing .cont .items h3 {
+    font-size: 3vw;
+  }
+
+  /* Pricing Styling End  */
+
+  /* Testimonials Style Start  */
+
+  #testimony .articles {
+    padding: 5vw;
+  }
+
+  #testimony .articles h1 {
+    font-size: 5vw;
+  }
+
+  #testimony .articles h2 {
+    font-size: 4vw;
+  }
+
+  #testimony .articles p {
+    font-size: 3vw;
+  }
+
+  #testimony .customerReviews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    row-gap: 5vh;
+  }
+
+  #testimony .customerReviews .items {
+    width: 80vw;
+    padding: 5vw;
+  }
+
+  #testimony .customerReviews .items h2 {
+    font-size: 4vw;
+  }
+
+  #testimony .customerReviews .items p {
+    font-size: 3vw;
+  }
+
+  /* Testimonials Style End  */
+
+  /* Newsletter Style Start  */
+
+  #newsletter {
+    height: 40vh;
+    flex-direction: column;
+  }
+
+  #newsletter .articles h1 {
+    font-size: 6vw;
+  }
+
+  #newsletter .articles p {
+    font-size: 3vw;
+  }
+
+  #newsletter .form input {
+    width: 50vw;
+    height: 7vh;
+    font-size: 2vw;
+    border-radius: 1vw;
+    border: none;
+    outline: none;
+  }
+
+  #newsletter .form button {
+    width: 20vw;
+    height: 7vh;
+    font-size: 2vw;
+    border-radius: 1vw;
+  }
+
+  /* Newsletter Style End  */
+
+  /* Footer Styling Start  */
+
+  footer {
+    width: 100%;
+  }
+
+  footer .cont {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .cont h1 {
+    font-size: 3vw;
+  }
+
+  footer .cont p,
+  footer .cont a {
+    font-size: 2vw;
+  }
 }
